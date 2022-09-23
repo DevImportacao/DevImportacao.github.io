@@ -1,0 +1,12 @@
+<pacotes>
+<pacote>
+  <!-- O tipo se refere ao tipos de versão: Correção, Implementação ou Melhoria. -->
+<tipo>Implementação</tipo>
+<data>2022-09-22</data>
+<versaoClient>3.25.0</versaoClient>
+<distribuicao>Estavel</distribuicao>
+  <!-- Aqui há um padrão onde o nome da pasta é sempre o número da versão. Ex.: 3.25.0 -->
+<nomePasta>3.25.0</nomePasta>
+<referenciaNotasDeVersao>http://a7.net.br/notas-de-versao/</referenciaNotasDeVersao>
+</pacote>
+</pacotes>
