@@ -6,4 +6,10 @@
 <versaoClient>3.25.0</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>I</tipo>
+<data>2022-09-29</data>
+<versaoClient>3.26.0</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>
