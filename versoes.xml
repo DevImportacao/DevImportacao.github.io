@@ -14,8 +14,14 @@
 </pacote>
 <pacote>
 <tipo>I</tipo>
-<data>2022-09-29</data>
+<data>2022-10-10</data>
 <versaoClient>3.26.1</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
+<pacote>
+<tipo>I</tipo>
+<data>2022-11-14</data>
+<versaoClient>3.26.2</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
 </pacotes>
