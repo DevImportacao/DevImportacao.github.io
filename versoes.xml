@@ -24,4 +24,10 @@
 <versaoClient>3.26.2</versaoClient>
 <distribuicao>Teste</distribuicao>
 </pacote>
+<pacote>
+<tipo>I</tipo>
+<data>2022-12-07</data>
+<versaoClient>3.27.0</versaoClient>
+<distribuicao>Teste</distribuicao>
+</pacote>
 </pacotes>
