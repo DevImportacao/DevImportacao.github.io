@@ -13,13 +13,13 @@
 <distribuicao>Estavel</distribuicao>
 </pacote>
 <pacote>
-<tipo>I</tipo>
+<tipo>C</tipo>
 <data>2022-10-10</data>
 <versaoClient>3.26.1</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
 <pacote>
-<tipo>I</tipo>
+<tipo>C</tipo>
 <data>2022-11-14</data>
 <versaoClient>3.26.2</versaoClient>
 <distribuicao>Teste</distribuicao>
@@ -29,5 +29,11 @@
 <data>2022-12-07</data>
 <versaoClient>3.27.0</versaoClient>
 <distribuicao>Estavel</distribuicao>
+</pacote>
+<pacote>
+<tipo>C</tipo>
+<data>2022-12-12</data>
+<versaoClient>3.27.1</versaoClient>
+<distribuicao>Teste</distribuicao>
 </pacote>
 </pacotes>
