@@ -36,4 +36,10 @@
 <versaoClient>3.27.1</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>C</tipo>
+<data>2023-01-09</data>
+<versaoClient>3.27.2</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>
