@@ -48,4 +48,10 @@
 <versaoClient>3.27.3</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>C</tipo>
+<data>2023-02-07</data>
+<versaoClient>3.27.4</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>
