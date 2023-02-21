@@ -66,4 +66,10 @@
 <versaoClient>3.28.0</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>C</tipo>
+<data>2023-02-21</data>
+<versaoClient>3.28.1</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>
