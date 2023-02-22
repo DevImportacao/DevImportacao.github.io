@@ -20,6 +20,7 @@ existenciaTabelaImp_CadernoOferta boolean;\n
 existenciaTabelaImp_Classificacao boolean;\n
 existenciaTabelaImp_GrupoRemarcacao boolean;\n
 existenciaTabelaImp_Versao boolean;\n
+existenciaTabelaImp_Cest boolean;\n
 \n
 BEGIN\n
 \n
@@ -233,6 +234,20 @@ IF (existenciaTabelaImp_Versao = TRUE) then\n
 raise exception 'Não é possível continuar, a tabela imp_versao já existe!';\n
 end IF;\n
 \n
+SELECT\n
+  (CASE\n
+    WHEN COUNT(table_name) <= 0 THEN FALSE\n
+    ELSE TRUE\n
+  END) INTO existenciaTabelaImp_Cest\n
+FROM information_schema.tables\n
+WHERE table_catalog = '$nomedatabase_clean_chinchila_imp'\n
+  AND table_schema = 'public'\n
+  AND table_name = 'imp_cest';\n
+\n
+IF (existenciaTabelaImp_Cest = FALSE) then\n
+raise exception 'Não é possível continuar, a tabela imp_cest não existe!';\n
+end IF;\n
+\n
 -- ALTERA A IMP_CLIENTE\n
 ALTER TABLE imp_cliente\n
 ADD Ret_ContatoCelular2ID int8,\n
@@ -371,6 +386,9 @@ ALTER TABLE Imp_ItemCadernoOferta ADD CONSTRAINT FK_Imp_Classificacao_Imp_ItemCa
 ALTER TABLE Imp_ItemCadernoOferta ADD CONSTRAINT FK_Imp_Fabricante_Imp_ItemCadernoOferta FOREIGN KEY (Imp_FabricanteID) REFERENCES Imp_Fabricante (ID);\n
 ALTER TABLE Imp_ItemCadernoOferta ADD CONSTRAINT FK_Imp_GrupoRemarcacao_Imp_ItemCadernoOferta FOREIGN KEY (Imp_GrupoRemarcacaoID) REFERENCES Imp_GrupoRemarcacao (ID);\n
 ALTER TABLE Imp_ItemCadernoOferta ADD CONSTRAINT FK_Imp_Produto_Imp_ItemCadernoOferta FOREIGN KEY (Imp_ProdutoID) REFERENCES Imp_Produto (ID);\n
+\n
+-- ALTERA O TIPO DA COLUNA ID DA TABELA IMP_CEST\n
+ALTER TABLE imp_cest ALTER COLUMN id TYPE bigint USING (trim(id)::bigint);\n
 \n
 -- CRIA A IMP_VERSAO\n
 CREATE TABLE Imp_Versao (\n
