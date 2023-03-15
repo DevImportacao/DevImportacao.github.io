@@ -78,4 +78,10 @@
 <versaoClient>3.29.0</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>M</tipo>
+<data>2023-03-15</data>
+<versaoClient>3.30.0</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>

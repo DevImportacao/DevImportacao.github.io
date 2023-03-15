@@ -58,6 +58,82 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Versão 3.30.0</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                15/03/2023</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção Pré-Verificação Unidade Negócio</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia um bug no dia 02 nas pré-verificações, onde a unidade de negócio não deveria ser executada, mas estava sendo e nisso soltava uma expection</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Ajuste de pré-verificação de produto e função logradouros</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia necessidade de implementar mais uma pré-verificação de produto<br>- Havia necessidade de criar a função dblink caso ela ainda não existisse, a fim de utilizá-la em conjunto com a função de logradouros</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Ajuste de query de ativação de produtos</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Antigamente, a query estava percorrendo cada produto individualmente e gerando uma nova string para ativar cada um. Para otimizar o tempo e o processamento, já que se trata da ativação de todos os produtos, era mais eficiente criar uma única query que ative todos de uma só vez</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Alteração da inserção de logradouros</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Durante a análise do processo de inserção de logradouros, foi detectado um ponto de melhoria relacionado à utilização de uma função personalizada que utiliza o dblink para permitir a conexão entre diferentes bancos de dados. Observou-se que essa função pode ser otimizada para melhorar o desempenho e a eficiência da inserção de logradouros no sistema</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Versão 3.29.0</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 28/02/2023</h4>
