@@ -58,6 +58,82 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Versão 3.30.1</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                24/03/2023</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção de erro de codificação ao utilizar FDW com MySQL</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Identificamos um problema de codificação de caracteres ao utilizar o FDW, que populava sem falhas, porém ao realizar o backup e restaurar em outro banco, estourava o erro "ERROR: invalid byte sequence for encoding 'UTF8': 0xc2 0x5d</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção de Logradouros e Warning PostgreSQL</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se vai criar a função de logradouros na base de dados, dá um erro de falta de permissão para a linguagem C e os logradouros não são inseridos<br>- Quando se vai criar uma base de dados, dá uma warning que é interpretada como erro, mas não é um erro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Remoção scripts de custos embalagens mães</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia layouts de importação para inserção de custos para embalagens mães, o que não fazia sentido pois o custo é por produto e ainda no final gerava custos absurdos nas lojas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Pré Verificações de Caderno Oferta e Custo</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a falta de uma pré verificação de caderno de ofertas que soltava um erro na hora de importar crediários<br>- Também havia a falta de uma pré verificação de custo, onde deixava-se importar custo para embalagens mãe erroneamente, pois o custo é por produto, não por embalagem</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Versão 3.30.0</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 15/03/2023</h4>
