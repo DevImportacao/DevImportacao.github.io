@@ -50,8 +50,8 @@ WHERE table_catalog = '$nomedatabase_clean_chinchila_imp'\n
   AND table_schema = 'public'\n
   AND table_name = 'imp_itemcadernoofertaquantidade';\n
 \n
-IF (existenciaTabelaImp_ItemCadernoOfertaQuantidade = FALSE) then\n
-raise exception 'Não é possível continuar, a tabela imp_itemcadernoofertaquantidade não existe!';\n
+IF (existenciaTabelaImp_ItemCadernoOfertaQuantidade = TRUE) then\n
+raise exception 'Não é possível continuar, a tabela imp_itemcadernoofertaquantidade já existe!';\n
 end IF;\n
 \n
 SELECT\n
