@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.updates_2_1()\n
+CREATE OR REPLACE FUNCTION public.updates_2_1_0()\n
     RETURNS void\n
     LANGUAGE 'plpgsql'\n
     COST 100\n
@@ -162,10 +162,10 @@ INSERT INTO Imp_Versao (Versao) VALUES ('2.1.0');\n
 GRANT SELECT,INSERT, UPDATE, DELETE  ON ALL TABLES IN SCHEMA public TO chinchila;\n
 \n
 -- A FUNÇÃO SE AUTO DROPA AUTOMATICAMENTE\n
-DROP FUNCTION IF EXISTS public.updates_2_1();\n
+DROP FUNCTION IF EXISTS public.updates_2_1_0();\n
 \n
 END;\n
 $BODY$;\n
 \n
-ALTER FUNCTION public.updates_2_1()\n
+ALTER FUNCTION public.updates_2_1_0()\n
     OWNER TO chinchila;\n
