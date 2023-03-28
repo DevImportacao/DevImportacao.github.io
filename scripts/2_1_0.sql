@@ -30,7 +30,7 @@ SELECT\n
   (CASE\n
     WHEN COUNT(table_name) <= 0 THEN FALSE\n
     ELSE TRUE\n
-  END) INTO existenciaTabelaImp_Prescritor\n
+  END) INTO existenciaTabelaImp_PrecoProdutoUnidadeNegocio\n
 FROM information_schema.tables\n
 WHERE table_catalog = '$nomedatabase_clean_chinchila_imp'\n
   AND table_schema = 'public'\n
