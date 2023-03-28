@@ -44,13 +44,13 @@ SELECT\n
   (CASE\n
     WHEN COUNT(table_name) <= 0 THEN FALSE\n
     ELSE TRUE\n
-  END) INTO existenciaTabelaItemCadernoOfertaQuantidade\n
+  END) INTO existenciaTabelaImp_ItemCadernoOfertaQuantidade\n
 FROM information_schema.tables\n
 WHERE table_catalog = '$nomedatabase_clean_chinchila_imp'\n
   AND table_schema = 'public'\n
   AND table_name = 'imp_itemcadernoofertaquantidade';\n
 \n
-IF (existenciaTabelaItemCadernoOfertaQuantidade = FALSE) then\n
+IF (existenciaTabelaImp_ItemCadernoOfertaQuantidade = FALSE) then\n
 raise exception 'Não é possível continuar, a tabela imp_itemcadernoofertaquantidade não existe!';\n
 end IF;\n
 \n
