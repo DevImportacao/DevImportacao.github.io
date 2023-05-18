@@ -1,8 +1,5 @@
-CREATE OR REPLACE FUNCTION public.updates_2_0_0()\n
-    RETURNS void\n
-    LANGUAGE 'plpgsql'\n
-    COST 100\n
-    VOLATILE PARALLEL UNSAFE\n
+CREATE OR REPLACE PROCEDURE public.updates_2_0_0()\n
+    LANGUAGE plpgsql\n
 AS $BODY$\n
 DECLARE\n
 existenciaTabelaImp_IcmsProduto boolean;\n
@@ -402,10 +399,10 @@ INSERT INTO Imp_Versao (Versao) VALUES ('2.0.0');\n
 GRANT SELECT,INSERT, UPDATE, DELETE  ON ALL TABLES IN SCHEMA public TO chinchila;\n
 \n
 -- A FUNÇÃO SE AUTO DROPA AUTOMATICAMENTE\n
-DROP FUNCTION IF EXISTS public.updates_2_0_0();\n
+DROP PROCEDURE IF EXISTS public.updates_2_0_0();\n
 \n
 END;\n
 $BODY$;\n
 \n
-ALTER FUNCTION public.updates_2_0_0()\n
+ALTER PROCEDURE public.updates_2_0_0()\n
     OWNER TO chinchila;\n

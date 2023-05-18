@@ -9,4 +9,9 @@
 <versao>2.1.0</versao>
 <query>2_1_0.sql</query>
 </atualizacao>
+<atualizacao>
+<data>2023-05-18</data>
+<versao>2.2.0</versao>
+<query>2_2_0.sql</query>
+</atualizacao>
 </atualizacoes>
