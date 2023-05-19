@@ -114,4 +114,10 @@
 <versaoClient>3.32.0</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>C</tipo>
+<data>2023-05-19</data>
+<versaoClient>3.32.1</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>
