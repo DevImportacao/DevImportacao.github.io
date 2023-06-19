@@ -58,6 +58,225 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Versão 3.33.0</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                19/06/2023</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Remoção das finalizações</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a necessidade de se remover muitas finalizações por causa que as mesmas foram implementadas no A7 Pharma para que fossem feitas quando a importação rodasse</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção do script de unidade negocio do Inovafarma</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Durante a execução do roteiro da unidade de negócio do layout de importação do sistema Inovafarma, identificou-se uma falha de ambiguidade no campo cep</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção do roteiro de custo do Big</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Durante a execução do roteiro de custo do layout de importação do sistema BIG, verificou-se a necessidade de adicionar um filtro para as unidades de negócio selecionadas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção na validação de tributação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Foi necessário corrigir a validação para exigir que o usuário selecione a opção de tributação antes de prosseguir com a importação, independentemente da referência utilizada. Inicialmente, essa validação já estava implementada no botão "Preparar Database", mas para garantir sua eficácia, foi necessário incluí-la no botão "Converter Database"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Reintroduzir charset do fdw</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Era imprescindível incluir uma opção para aprimorar o mapeamento do fdw e prevenir possíveis falhas de codificação</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Melhoria Contas a Pagar BIG</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia necessidade de alterar o campo número do documento no roteiro do BIG, de modo a priorizar a captura do número da nota e, em caso de ausência, utilizar o número da duplicata</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.23.6.0</h5>
+            </div>
+        </br></br></br></br></br></br>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Suspensão de embalagens mães e razão social de fornecedores</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a necessidade de se retirar as finalizações de importação feitas pelos técnicos manualmente, as quais suspendem embalagens mães do buscador e colocam razão social em fabricantes e fornecedores</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Importação novos atributos unidade de negócio</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a necessidade de se tornar o atributo cidade na unidade de negócio como brigatório na importação, então dessa forma se fazia necessário importar essa informação e outras adicionais</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Importação de código IBGE</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Nas finalizações de importação, há uma finalização longa em relação ao preenchimento do código IBGE nas cidades, o que fazia o técnico perder tempo ao executar isso.</br>- Na mesma tarefa, aproveitou-se para melhorar a forma como as consultas são feitas, começando a criar um certo padrão para um processamento melhor e garantir a eficiência durante a execução</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Importação de Configurações da Unidade de Negócio</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Para agilizar as finalizações de importação e permitir que o implantador fizesse menos configurações manuais, havia a necessidade de se criar as configurações e configurações avançadas das unidades de negócio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Remoção de novas linhas e caracteres não tratados</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se vai importar registros, no momento da montagem de chaves para verificação, pode ser que no registro que venham alguns caracteres especiais não tratados, como quebras de linhas e alguns caracteres que não se encontravam no método original</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Importação de endereço de clientes</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia uma demora excessiva ao se importar clientes junto de seus endereços, assim como um gasto exagerado de memória durante a execução, o que causava em casos de bases de dados muito grandes problemas como lentidão, memória insuficiente ao se importar, queda do Wildfly e no pior dos casos, importações manuais por falta de condições de hardware quando o cliente não podia ou não gostaria de melhorar o equipamento atual.</br>- Partindo disso, havia a necessidade de se separar a importação de endereços de clientes em um passo isolado, onde ele busca os endereços em um cache da memória e os demais como fabricante, fornecedor e unidade de negócio, buscam os registros diretamente da base de dados</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Remoção do uso de entidade Pessoa como cache no ImportacaoContext</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- O processo de Importação carregava no Contexto todas as pessoas existentes na base de dados como Entidades de fato, porém o consumo de memória durante importações de bases com grandes quantidades de Clientes estava inviabilizando algumas importações, ou pelo menos exigindo que a importação fosse rodada em um Hardware com grande quantidade de memória física (pelo menos mais de 8 GB de RAM), e isso nem sempre era possível.</br>- Com a alteração, são mantidos em memória apenas os IDs das Pessoas, e a entidade em si é carregada apenas se for estritamente necessária.</br>- Alterada também a condição para considerar a pessoa duplicada, para levar em conta não só os documentos da pessoa, mas também a similaridade de nomes entre a pessoa que está sendo importada e a pessoa que já existe na base.</br>- Caso uma pessoa que não possui similaridade de nomes seja encontrada através de um documento, esse documento é anulado tanto na base de dados, quanto no registro que será importado, pois não há mais garantia nenhuma quanto à corretude desse documento (ex: Se um "José" e uma "Maria" tiverem o mesmo CPF, o CPF será anulado para os dois registros)</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Versão 3.32.2</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 22/05/2023</h4>

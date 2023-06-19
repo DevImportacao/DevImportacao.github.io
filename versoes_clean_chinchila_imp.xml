@@ -19,4 +19,9 @@
 <versao>2.2.1</versao>
 <query>2_2_1.sql</query>
 </atualizacao>
+<atualizacao>
+<data>2023-06-19</data>
+<versao>2.3.0</versao>
+<query>2_3_0.sql</query>
+</atualizacao>
 </atualizacoes>
