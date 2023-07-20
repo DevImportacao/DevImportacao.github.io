@@ -24,4 +24,9 @@
 <versao>2.3.0</versao>
 <query>2_3_0.sql</query>
 </atualizacao>
+<atualizacao>
+<data>2023-07-20</data>
+<versao>2.4.0</versao>
+<query>2_4_0.sql</query>
+</atualizacao>
 </atualizacoes>

@@ -58,6 +58,131 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Versão 3.34.0</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                20/07/2023</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Atualização dos caderno oferta do big</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a necessidade de organizar a inserção dos cadernos de ofertas do BIG na base de dados IMP, a fim de facilitar a identificação e permitir que os usuários escolhessem apenas o caderno desejado</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Atualização Automática do A7 Pharma</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a necessidade de implementar uma nova placa de rede, pois sua ausência estava interferindo diretamente na atualização automática do A7 Pharma onde o Wildfy não subia, o que poderia causar problemas em outras situações do sistema</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Otimizando o Desempenho WildFly</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Era necessário encerrar o serviço do MySQL após utilizá-lo, a fim de evitar o processamento desnecessário de recursos de processamento e memória antes de iniciar o Wildfly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Preço Por Unidade Negócio VSM</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Foi necessário implementar o script ausente que preenche a tabela de preço por unidade de negócio da base de dados IMP do sistema VSM</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.30.1.0</h5>
+            </div>
+        </br></br></br></br></br></br>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Atualização de CustoProduto na importação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Atualmente, quando se vai importar um CustoProduto, não há validações em relação à atualizações de custos anteriores por entrada de nota fiscal, o que fazia o custo ser sobrescrito incorretamente.</br></br>- A partir disso o custo vindo por importação deveria atualizar somente as movimentações de estoque anteriores a nota fiscal ou todas as movimentações de estoque dos últimos 30 dias, partindo do princípio de que a importação do "Dia 02" é feita no mesmo dia da      virada ou no máximo 1 dia após a virada da loja, o que acabou sendo implementado para evitar correções manuais dos técnicos.</br></br>  - Ainda aproveitou-se para setar automaticamente a "dataHoraInicioCalculoCustoMedio" caso a configuração de cálculo esteja habilitada, evitando assim uma conclusão manual de importação por parte do técnico.</br></br>- Foi necessário inverter a sequência de execução do "PassoEstoque" com o "PassoCusto", pois se o estoque continuar sendo importado após o custo como é atualmente, a movimentação de estoque importada vai ficar com o custo atual, o que pode estar errado se houve entrada de nota fiscal, pois a movimentação de estoque de importação deve ter o custo de importação.</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.26.4.0</h5>
+            </div>
+        </br></br></br></br></br></br>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção de importação de itens de caderno de ofertas por quantidade</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Na última alteração por causa da trava das Fake Entities, foi inserida uma consulta para busca das embalagens importadas no PassoCadernoOferta, no entanto a query estava errada, impossibilitando assim a importação de itens de caderno de ofertas por quantidade, onde as embalagens não eram encontradas</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Versão 3.33.1</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 19/06/2023</h4>
@@ -233,7 +358,7 @@
                         </div>
                     </div>
                     <div class="bottom-line">
-                        <p class="mbr-text mbr-fonts-style display-7">- Nas finalizações de importação, há uma finalização longa em relação ao preenchimento do código IBGE nas cidades, o que fazia o técnico perder tempo ao executar isso.</br>- Na mesma tarefa, aproveitou-se para melhorar a forma como as consultas são feitas, começando a criar um certo padrão para um processamento melhor e garantir a eficiência durante a execução</p>
+                        <p class="mbr-text mbr-fonts-style display-7">- Nas finalizações de importação, há uma finalização longa em relação ao preenchimento do código IBGE nas cidades, o que fazia o técnico perder tempo ao executar isso.</br></br>- Na mesma tarefa, aproveitou-se para melhorar a forma como as consultas são feitas, começando a criar um certo padrão para um processamento melhor e garantir a eficiência durante a execução</p>
                     </div>
                 </div>
             </div>
@@ -278,7 +403,7 @@
                         </div>
                     </div>
                     <div class="bottom-line">
-                        <p class="mbr-text mbr-fonts-style display-7">- Havia uma demora excessiva ao se importar clientes junto de seus endereços, assim como um gasto exagerado de memória durante a execução, o que causava em casos de bases de dados muito grandes problemas como lentidão, memória insuficiente ao se importar, queda do Wildfly e no pior dos casos, importações manuais por falta de condições de hardware quando o cliente não podia ou não gostaria de melhorar o equipamento atual.</br>- Partindo disso, havia a necessidade de se separar a importação de endereços de clientes em um passo isolado, onde ele busca os endereços em um cache da memória e os demais como fabricante, fornecedor e unidade de negócio, buscam os registros diretamente da base de dados</p>
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia uma demora excessiva ao se importar clientes junto de seus endereços, assim como um gasto exagerado de memória durante a execução, o que causava em casos de bases de dados muito grandes problemas como lentidão, memória insuficiente ao se importar, queda do Wildfly e no pior dos casos, importações manuais por falta de condições de hardware quando o cliente não podia ou não gostaria de melhorar o equipamento atual.</br></br>- Partindo disso, havia a necessidade de se separar a importação de endereços de clientes em um passo isolado, onde ele busca os endereços em um cache da memória e os demais como fabricante, fornecedor e unidade de negócio, buscam os registros diretamente da base de dados</p>
                     </div>
                 </div>
             </div>
@@ -293,7 +418,7 @@
                         </div>
                     </div>
                     <div class="bottom-line">
-                        <p class="mbr-text mbr-fonts-style display-7">- O processo de Importação carregava no Contexto todas as pessoas existentes na base de dados como Entidades de fato, porém o consumo de memória durante importações de bases com grandes quantidades de Clientes estava inviabilizando algumas importações, ou pelo menos exigindo que a importação fosse rodada em um Hardware com grande quantidade de memória física (pelo menos mais de 8 GB de RAM), e isso nem sempre era possível.</br>- Com a alteração, são mantidos em memória apenas os IDs das Pessoas, e a entidade em si é carregada apenas se for estritamente necessária.</br>- Alterada também a condição para considerar a pessoa duplicada, para levar em conta não só os documentos da pessoa, mas também a similaridade de nomes entre a pessoa que está sendo importada e a pessoa que já existe na base.</br>- Caso uma pessoa que não possui similaridade de nomes seja encontrada através de um documento, esse documento é anulado tanto na base de dados, quanto no registro que será importado, pois não há mais garantia nenhuma quanto à corretude desse documento (ex: Se um "José" e uma "Maria" tiverem o mesmo CPF, o CPF será anulado para os dois registros)</p>
+                        <p class="mbr-text mbr-fonts-style display-7">- O processo de Importação carregava no Contexto todas as pessoas existentes na base de dados como Entidades de fato, porém o consumo de memória durante importações de bases com grandes quantidades de Clientes estava inviabilizando algumas importações, ou pelo menos exigindo que a importação fosse rodada em um Hardware com grande quantidade de memória física (pelo menos mais de 8 GB de RAM), e isso nem sempre era possível.</br></br>- Com a alteração, são mantidos em memória apenas os IDs das Pessoas, e a entidade em si é carregada apenas se for estritamente necessária.</br></br>- Alterada também a condição para considerar a pessoa duplicada, para levar em conta não só os documentos da pessoa, mas também a similaridade de nomes entre a pessoa que está sendo importada e a pessoa que já existe na base.</br></br>- Caso uma pessoa que não possui similaridade de nomes seja encontrada através de um documento, esse documento é anulado tanto na base de dados, quanto no registro que será importado, pois não há mais garantia nenhuma quanto à corretude desse documento (ex: Se um "José" e uma "Maria" tiverem o mesmo CPF, o CPF será anulado para os dois registros)</p>
                     </div>
                 </div>
             </div>
@@ -355,7 +480,7 @@
                         </div>
                     </div>
                     <div class="bottom-line">
-                        <p class="mbr-text mbr-fonts-style display-7">- Quando o usuário ia inserir logradouros pelo sistema, apresentava um erro no back-end falando que deveria ser executado com o usuário postgres</br>- Também faltava rodar a função de preenchimento de códigos ibge que não estava sendo executada</p>
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando o usuário ia inserir logradouros pelo sistema, apresentava um erro no back-end falando que deveria ser executado com o usuário postgres</br></br>- Também faltava rodar a função de preenchimento de códigos ibge que não estava sendo executada</p>
                     </div>
                 </div>
             </div>
