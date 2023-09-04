@@ -58,6 +58,146 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Versão 3.35.0</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                04/09/2023</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção script imp_produto do Inovafarma</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- No sistema Inovafarma, foi identificada uma falha no script, onde a coluna 'lista_dcb' da tabela 'imp_produto' apresentava dados incorretos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>BUG Base Limpa PoupAqui</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Durante o processo de cópia do "item caderno oferta", foi necessário ignorar o campo "ultimaedicaousuarioid", uma vez que a cópia de usuários não foi realizada, por ser uma chave estrangeira relacionada à tabela "usuário"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Atualização do Script de Produto Sistema BIG</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Essas mudanças eram necessárias para manter os dados de preço venda e preço referencial atualizados e precisos conforme o roteiro do sistema BIG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+              <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Adição VPN Base Limpa Economize</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Havia a necessidade de incluir na busca de clientes a nova VNP criada para Economize, de modo que eles pudessem realizar consultas dos "clientes origem" para o processo de base limpa</p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.31.11.0</h5>
+            </div>
+        </br></br></br></br></br></br>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Correção na importação de CustoProduto</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- No momento da importação de custoproduto é verificada a existência anterior daquele custo para que se necessário possa ser editado, porém antes disso era buscado se aquele custo possuía item de nota fiscal, mas como o custo poderia ser nulo, acabava em alguns casos gerando "NullPointerException", o que impossibilitava o técnico de importar os registros que não se enquadravam no quesito de existir um custo para se editar</p>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.31.6.0</h5>
+            </div>
+        </br></br></br></br></br></br>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Inserção de Estados no contexto na importação de Crediário</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- No momento da importação de crediário, se fazia necessária a inserção dos estados no contexto, porém isso não estava acontecendo, o que gerava "NullPointerException" durante a importação dos registros</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Constraint Violation ao importar endereço de cliente</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Em alguns casos no momento de se inserir endereços de cliente pela importação, o sistema soltava uma Exception dizendo que a transação foi marcada como "rollback" e no log era informado que havia uma "constraint violation" na tabela por causa da cidade que não havia sido inserida, o que se originava pelo fato do endereço conter um bairro inválido que caiu nas "issues" e a cidade que não existia na base e havia sido cadastrada anteriormente no mesmo fluxo não ter sido salva, mas permanecia na lista de contexto erroneamente, o que não permitia que o usuário continuasse a importação por causa da Exception gerada no client.</br></br>- Ainda no momento de testes, descobriu-se que quando a cidade já estava cadastrada mas sem logradouros, ela não era inserida nos    mapas de contexto, o que gerava uma "issue" falando que já existia uma cidade cadastrada naquele estado, o que poderia ser um problema ao usuário final por não saber exatamente como resolver o problema.</br></br>- Aproveitou-se para prevenir os mesmos casos citados acima para bairros, para que caso venha acontecer, evite-se os mesmos problemas.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Versão 3.34.0</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 20/07/2023</h4>
