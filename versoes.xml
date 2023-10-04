@@ -150,4 +150,10 @@
 <versaoClient>3.35.0</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>C</tipo>
+<data>2023-10-04</data>
+<versaoClient>3.35.1</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>

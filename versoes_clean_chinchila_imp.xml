@@ -29,4 +29,9 @@
 <versao>2.4.0</versao>
 <query>2_4_0.sql</query>
 </atualizacao>
+<atualizacao>
+<data>2023-10-04</data>
+<versao>2.5.0</versao>
+<query>2_5_0.sql</query>
+</atualizacao>
 </atualizacoes>
