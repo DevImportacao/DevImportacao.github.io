@@ -58,6 +58,149 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.37.6.0</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Menor alocação de memória na importação de cadernos de ofertas</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- No momento de se importar cadernos de ofertas, todos os cadernos com seus itens eram inseridos no contexto, o que era um problema quando havia alguma loja com muitos cadernos de ofertas e/ou muitos itens, o que acabava alocando muita memória e algumas vezes impossibilitava o técnico de importação prosseguir com os procedimentos e o obrigava a fazer manualmente todo o resto da importação, pois os mesmos ainda permaneciam no contexto durante toda a importação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>BUG: Falha ao encontrar estado no processo de Importação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se realiza a importação de uma entidade que requer um estado e a sigla fornecida é inválida, o sistema gera uma "NullPointerException", porém não fornece informações sobre qual field contém o erro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Criação de classificação folha na importação de produto</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se vai importar produtos, há sistemas que possuem a classificação inválida, ou seja, o produto acaba sendo vinculado na classificação pai (galho) ao invés da classificação filha (folha) e nisso o produto acaba caindo nas issues.</br></br>- Há sistemas em que isso é muito frequente e há muitos casos, então a partir disso se fazia necessário com que o produto fosse vinculado automaticamente na folha para evitar retrabalhos manuais por parte do técnico, havendo assim ganho de tempo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Logradouro não encontrado na importação de endereços</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Durante a importação de endereço de clientes, o sistema soltava uma "constraint violation" que dizia que o logradouro, bairro e/ou cidade a ser usado no endereço não estava presente na tabela.</br></br>- Tudo se dava devido a um endereço que continha logradouro, bairro e/ou cidade não cadastrados e foram inseridos e guardados nos mapas, porém mesmo não tendo nenhum problema de validação continuaram no contexto no momento em que houve a validação do endereço e o mesmo foi invalidado, gerando assim um uso indevido em um próximo registro, pois os mesmos deveriam ser removidos do contexto, por causa que receberam um roolback.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Aperfeiçoamento de memória e performance na importação de produtos</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se vai importar ou passar no "PassoProduto", diversas entidades são inseridas na memória e no contexto, no entanto quando se trabalha com databases muito grandes, isso pode ser um problema, o que se fez necessidade de se otimizar o uso de memória.</br></br>- Em alguns casos, o sistema soltava "NullPointerException" por não encontrar um produto ou conter algum campo nulo retornado da base de importação, o que impossibilitava o usuário de prosseguir sem nenhum empecilho.</br></br>- Também acontecia do "TerminarPasso" ser muito lento toda vez que se passava em produto, o que em grandes quantidades de registros, atrapalhava o técnico, então se fazia necessário aperfeiçoar esse ponto para que fosse mais rápido e ágil.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Aprimoramento do acompanhamento de execução da importação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Durante a importação, quando o módulo passa em qualquer passo e executa o método "TerminarPasso", ele pode ficar "travado" até o final da execução daquele passo, porém isso não é informado ao usuário, o que transmite a percepção de que houve o travamento no "PrepararPasso" ou no "ImportarRegistro", causando uma divergência com o informe do processamento atual.</br></br>- Partindo disso, foi-se necessário adicionar um retorno ao usuário na interface para que facilitasse a identificação desse tipo de caso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Contemplação do Status de importação "Ignorado"</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Recentemente se descobriu um problema no excesso de cadastro de embalagens pela equipe de Sustentação, e para evitar esse tipo de caso, será inserida uma trava pela equipe de desenvolvimento, de acordo com Fernando Scherrer, para evitar o cadastro excessivo de embalagens, então muitos produtos poderão deixar de ser inseridos, no entanto para que isso não trave o processo de importação, seria necessário contemplar o status "I" de ignorado para que o módulo todo possa usar desse benefício de poder ignorar a importação de um registro sem nenhum problema.</br></br>- Também aproveitou-se para fazer uma organização e manter o padrão de como os scripts são inseridos nas classes e onde devem ficar, ou seja, não serem espalhados pela classe e sim mantidos em uma ordem onde todas as classes devem seguir, facilitando assim a manutenção de código.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Otimizações de processamentos nos Façades a partir do Contexto de Importação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Em diversos momentos, a importação trabalha com grandes massas de registros, principalmente em clientes muito grandes e com o objetivo de se aprimorar o processamento para ganho de performance, foi    necessário criar alternativas para as validações feitas dentro dos façades, ou seja, fazer com que validações que exigiam consultas na base de dados fossem realizadas a partir de cache no contexto de importação, ganhando dessa forma velocidade na inserção dos novos registros.</br></br>- Ainda aproveitou-se para deixar de persistir e validar durante a importação entidades filhas que não são importadas, ganhando assim mais performance ainda por registro.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>Versão 3.35.1</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 04/10/2023</h4>
