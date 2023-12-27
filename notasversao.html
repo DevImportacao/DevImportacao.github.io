@@ -58,6 +58,100 @@
     <div class="container">
         <div class="mbr-section-head">
             <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Versão 3.36.0</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                27/12/2023</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Criação automática configurações avançadas importação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Com a nova versão do front-end do módulo de importação, presente a partir da versão 3.37.19.0 do A7 Pharma, os dados que antes eram inseridos na url de importação, são inseridos em configurações avançadas de unidade de negócio, para facilitar e agilizar o trabalho dos técnicos e de quem deseja acompanhar as importações.</br></br>- Partindo disso, com o intuito de agilizar mais ainda o processo para o técnico, se fez necessário criar ou redefinir as configurações de importação de forma automática para que o usuário não precise preencher nada.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>A7 Pharma</strong></h3>
+            <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
+                Versão 3.37.19.0</h4>
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>BUG: Códigos de barras duplicados e etiquetas iguais</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se vai importar duas embalagens com códigos de barras iguais ou parecidos, mudando somente a quantidade de zeros à esquerda, o módulo de importação insere as embalagens normalmente, mas isso afeta outros módulos do sistema por causa que os zeros à esquerda são cortados em algumas tratativas, e isso acaba gerando erros e até    acusando duplicidades, fazendo assim com que o usuário ou funcionalidade possa não ser executada da forma adequada.</br></br>- Também quando se vai importar códigos de barras com 6 caracteres ou menos, e que acabam conflitando com algum número de etiqueta, acaba-se gerando etiquetas com o mesmo número de algum código de barras.</br></br>- Ainda foi necessário mexer em um pequeno trecho de código no "Façade" de Embalagem, pois o mesmo estava gerando "Exception" por causa de elementos duplicados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>BUG: Classificação Pai não encontrada</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Quando se vai importar produtos, o módulo de importação faz uma verificação se o produto está vinculado em uma classificação do tipo galho ou folha.</br></br>- Caso o produto não esteja na folha, é verificado se existe uma folha com o mesmo nome dentro do galho e se não houver, a folha é criada e o produto vinculado na folha.</br></br>- No momento da validação da folha criada, o módulo solta uma "exception" falando que um mapa está nulo ao tentar fazer os procedimentos para a nova classificação.</br></br>- Ainda quando se corrigiu o problema, identificou-se uma falha durante a criação da nova folha, onde o trecho de código criava várias folhas com o mesmo nome para o galho selecionado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+            <div class="card col-12">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>Adequação do front-end de importação</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5"></p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">- Ao longo dos anos, o módulo de importação acabou ficando abandonado e parou de receber novas funcionalidades e atualizações importantes, o que acabou fazendo-se necessário com que os técnicos criassem suas    próprias formas de acompanhar e validar o andamento de uma importação de dados, até se chegar a um padrão comum.</br></br>- Partindo disso, se fez necessário remodelar o front-end para criar algo mais funcional e que agilizasse o processo, facilitando assim o acompanhamento da importação atual não só pelo importador, mas também por outras partes interessadas como implantadores e outros que estiverem no mesmo servidor, criando dessa forma um aperfeiçoamento da metodologia, onde há uma certa transparência em relação ao que está sendo executando e qual a situação atual dos registros, gerando assim entre ambas as partes uma maior clareza, e também uma certa agilidade no processo de importação, onde o técnico deixará de copiar, colar e rodar muitas queries durante os processos, aumentando a sua eficiência com relação a entrega da base de dados.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+<section data-bs-version="5.1" class="features9 cid-tiyWvMIvwo" id="features10-l">
+    <!---->
+    
+
+    
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
                 <strong>A7 Pharma</strong></h3>
             <h4 class="mbr-section-subtitle mbr-fonts-style mb-0 mt-2 display-5">
                 Versão 3.37.6.0</h4>

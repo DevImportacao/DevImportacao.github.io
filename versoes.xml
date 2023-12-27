@@ -156,4 +156,10 @@
 <versaoClient>3.35.1</versaoClient>
 <distribuicao>Estavel</distribuicao>
 </pacote>
+<pacote>
+<tipo>I</tipo>
+<data>2023-12-27</data>
+<versaoClient>3.36.0</versaoClient>
+<distribuicao>Estavel</distribuicao>
+</pacote>
 </pacotes>
